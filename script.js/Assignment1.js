@@ -4,6 +4,17 @@ btns.forEach(btn => {
   btn.addEventListener("click",()=>{
     // console.log("clicked")
     bgBox.style.background=btn.id
+    btns.forEach(b => {
+      if (b === btn) {
+        b.style.display = "block"    
+      } else {
+        b.style.display = "none"
+      }
+   }   ) 
+ 
+    
+    
+  
   })
     
 });
